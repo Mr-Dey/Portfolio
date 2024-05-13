@@ -1,9 +1,9 @@
 :root{
-    --color1:#5680E9;
-    --color2:#84CEEB;
-    --color3:#5AB9EA;
-    --color4:#C1C8E4;
-    --color5:#8860D0;
+    --color1:#edc7b7;
+    --color2:#eee2dcb7;
+    --color3:#bab2b5;
+    --color4:#123c69;
+    --color5:#ac3b61;
 }
 ::webkit-scrollbar{
     display: none;
@@ -14,6 +14,7 @@
     margin: 0;
     padding: 0;
     scrollbar-width: none;
+    color:black
 
 }
 
@@ -31,6 +32,13 @@ nav{
     height: 10vh;
     background-color: var(--color2);
     padding: 0 6vw;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 88vw;
+    box-shadow: 0vh .1vh .5vh rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    backdrop-filter: blur(2vw);
 }
 
 nav ul{
@@ -45,12 +53,12 @@ nav ul li{
 }
 
 nav .left{
-    font-size: 4vh;
+    font-size: 2.2vw;
     font-weight: bold;
 }
 
 nav .right{
-    font-size: 2vh;
+    font-size: 1vw;
 }
 
 
@@ -58,14 +66,14 @@ nav .right{
 .firstSection{
     display: flex;
     justify-content: space-around;
-    margin: 16vh auto;
-    height: 50vh;
+    margin: 18vh auto;
+    height: 60vh;
     max-width: 90vw;
 }
 
 .leftSection{
     margin: 10vh 0;
-    font-size: 6vh;
+    font-size: 3vw;
 }
 
 .leftSection .color{
@@ -80,7 +88,7 @@ nav .right{
     align-items: center;
 }
 .rightSection img{
-   height: 50vh;
+   width: 25vw;
 }
 
 .firstSection > div{
@@ -91,39 +99,49 @@ nav .right{
 /* secondSection */
 hr{
     border: 0;
-    max-width: 90%;
+    max-width: 80%;
     margin: 5vh auto;
-    height: .2vh;
+    height: .5vh;
     border-radius: 1vh;
-    background: var(--color4);
+    background: var(--color5);
+    opacity: 50%;
 }
 
 .secondSection{
     max-width: 80vw;
-    max-height: 80vh;
+    max-height: 75vh;
     overflow: scroll;
     margin: 10vh auto;
     text-align: center;
     background-color: var(--color2);
     border-radius: 2vw;
+    box-shadow: 0vh .2vh 2vh rgba(0, 0, 0, 0.5);
 }
-.project_list{
+.projects{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
+    margin: auto;
+    max-width: 95%;
+}
+.projects .list{
+    flex-direction:row;
+    margin: 3vh auto;
 }
 .project img{
-    border-radius: 2vw;
+    border-radius:2vw;
     margin:1vw;       
-    max-width: 24vw;
+    max-width: 10vw;
 }
 .title{
     font-size: 2vw;
 }
-
-
-
+.projects .left{
+    text-align: start;
+    max-width: 70%;
+    font-size: 1.5vw;
+}
 
 /* 
 @media only screen and (max-width:600px){
@@ -131,6 +149,6 @@ hr{
     width: 100vw;
  }
  nav .right{
-    font-size: 1vh;
+    font-size: 1vw;
  }
 } */
