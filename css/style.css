@@ -5,10 +5,16 @@
     --color4:#C1C8E4;
     --color5:#8860D0;
 }
+::webkit-scrollbar{
+    display: none;
+}
+
 
 *{
     margin: 0;
     padding: 0;
+    scrollbar-width: none;
+
 }
 
 body{
@@ -20,10 +26,11 @@ body{
 
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
     align-items: center;
     height: 10vh;
     background-color: var(--color2);
+    padding: 0 6vw;
 }
 
 nav ul{
@@ -39,22 +46,32 @@ nav ul li{
 
 nav .left{
     font-size: 4vh;
+    font-weight: bold;
 }
 
-/* main */
+nav .right{
+    font-size: 2vh;
+}
+
+
+/* firstSection */
 .firstSection{
     display: flex;
     justify-content: space-around;
-    margin: 5vh 0vh;
-    max-height: 50vh;
+    margin: 16vh auto;
+    height: 50vh;
+    max-width: 90vw;
 }
 
 .leftSection{
     margin: 10vh 0;
-    font-size: 5vh;
+    font-size: 6vh;
 }
+
 .leftSection .color{
+    font-weight: bold;
     color: var(--color2);
+    background-color: var(--color5);
 }
 
 .rightSection{
@@ -67,5 +84,53 @@ nav .left{
 }
 
 .firstSection > div{
-    width: 30%;
+    width: 45%;
 }
+
+
+/* secondSection */
+hr{
+    border: 0;
+    max-width: 90%;
+    margin: 5vh auto;
+    height: .2vh;
+    border-radius: 1vh;
+    background: var(--color4);
+}
+
+.secondSection{
+    max-width: 80vw;
+    max-height: 80vh;
+    overflow: scroll;
+    margin: 10vh auto;
+    text-align: center;
+    background-color: var(--color2);
+    border-radius: 2vw;
+}
+.project_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project img{
+    border-radius: 2vw;
+    margin:1vw;       
+    max-width: 24vw;
+}
+.title{
+    font-size: 2vw;
+}
+
+
+
+
+/* 
+@media only screen and (max-width:600px){
+ body{
+    width: 100vw;
+ }
+ nav .right{
+    font-size: 1vh;
+ }
+} */
