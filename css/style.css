@@ -8,15 +8,42 @@
 ::webkit-scrollbar{
     display: none;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 
 *{
     margin: 0;
     padding: 0;
     scrollbar-width: none;
-    color:black
-
+    color:black;
+    /* cursor:none; */
 }
+
+/* cursor */
+#cursor {
+    position: absolute;
+    background-color: #fff;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1002;
+  }
+  #cursor-border {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.2s ease-out;
+    z-index: 1002;
+  }
+
 
 body{
     background-color: var(--color1);
@@ -136,11 +163,30 @@ hr{
 }
 .title{
     font-size: 2vw;
+    margin: 5vh auto;
 }
 .projects .left{
     text-align: start;
     max-width: 70%;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
+}
+
+.thirdSection{
+    text-align: center;
+    margin: auto;
+}
+
+.skillbox{
+    background-color: var(--color2);
+    max-width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.skillbox ul li{
+    display: flex;
+    justify-content: center;
 }
 
 /* 
