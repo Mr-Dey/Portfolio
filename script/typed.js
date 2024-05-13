@@ -31,7 +31,7 @@ script.onload = ()=> {
             "about Linux System Administration.",
             "about Network Security.",
         ],
-        typeSpeed: 50,
+        typeSpeed: 100,
     });
 };
 

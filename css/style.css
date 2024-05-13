@@ -138,7 +138,7 @@ hr{
     max-width: 80vw;
     max-height: 75vh;
     overflow: scroll;
-    margin: 10vh auto;
+    margin: 20vh auto;
     text-align: center;
     background-color: var(--color2);
     border-radius: 2vw;
