@@ -44,17 +44,23 @@ nav .left{
 /* main */
 .firstSection{
     display: flex;
-    align-items: center;
     justify-content: space-around;
+    margin: 5vh 0vh;
 }
 
 .leftSection{
-    background-color:var(--color3);
-}
-.rightSection{
-    background-color: var(--color4);
+    font-size: 6vh;
 }
 
-.firstSection div{
+.rightSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightSection img{
+   height: 50vh;
+}
+
+.firstSection > div{
     width: 30%;
 }
