@@ -88,6 +88,24 @@ nav .right{
     font-size: 1vw;
 }
 
+/* section */
+.section{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-1vw);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0vw);
+}
+
+@media(prefers-reduced-motion){
+    .section{
+        transition: none;
+    }
+}
 
 /* firstSection */
 .firstSection{
