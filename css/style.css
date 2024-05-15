@@ -154,7 +154,7 @@ nav .right{
 hr{
     border: 0;
     max-width: 80%;
-    margin: 5vh auto;
+    margin: 10vh auto;
     height: .5vh;
     border-radius: 1vh;
     background: var(--color5);
@@ -162,14 +162,17 @@ hr{
 }
 
 .secondSection{
+    display: flex;
     max-width: 85vw;
-    max-height: 75vh;
-    margin: 20vh auto;
-    overflow: scroll;
+    height: 70vh;
+    margin: 5vh auto;
     text-align: center;
     background-color: var(--color2);
     border-radius: 2vw;
     box-shadow: 0vh .2vh 2vh rgba(0, 0, 0, 0.5);
+}
+.secondSection .arrow{
+    margin: auto 1vw;
 }
 .projects{
     display: flex;
@@ -177,7 +180,7 @@ hr{
     justify-content:space-around;
     align-items: center;
     margin: auto;
-    max-width: 95%;
+    max-width: 86%;
 }
 .projects .list{
     flex-direction:row;
@@ -189,8 +192,8 @@ hr{
     max-width: 10vw;
 }
 .title{
+    text-align: center;
     font-size: 2vw;
-    margin: 5vh auto;
     color: var(--color5);
 }
 .projects .left{
@@ -201,8 +204,8 @@ hr{
 
 .thirdSection{
     max-width: 85vw;
-    max-height: 75vh;
-    margin: 20vh auto;
+    height: 70vh;
+    margin: 5vh auto;
     text-align: center;
     background-color: var(--color2);
     border-radius: 2vw;

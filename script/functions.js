@@ -22,8 +22,8 @@ const observer=new IntersectionObserver((elemet)=>{
 })
 
 home.addEventListener('click',()=>scroll(firstSection,100));
-project.addEventListener('click',()=>scroll(secondSection,100));
-skills.addEventListener('click',()=>scroll(thirdSection,100));
+project.addEventListener('click',()=>scroll(secondSection,220));
+skills.addEventListener('click',()=>scroll(thirdSection,220));
 
 
 section.forEach((e)=>observer.observe(e));
