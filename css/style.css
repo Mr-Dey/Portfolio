@@ -173,6 +173,7 @@ hr{
 }
 .secondSection .arrow{
     margin: auto 1vw;
+    cursor: pointer;
 }
 .projects{
     display: flex;
